@@ -1132,7 +1132,7 @@ function bootUI() {
   const navEl = document.getElementById('navTabs');
   navEl.style.display = 'flex';
   navEl.innerHTML = `<div class="nav-tab active" data-view="__trend">TREND TAHUNAN</div>` 
-    + `<div class="nav-tab" data-view="__overview">PENCAPAIAN SEMASA</div>`
+    + `<div class="nav-tab" data-view="__overview">PENCAPAIAN TAHUN SEMASA</div>`
     + SECTIONS.map(s => `<div class="nav-tab" data-view="${s.id}">${s.name}</div>`).join('');
 
   navEl.addEventListener('click', e => {
